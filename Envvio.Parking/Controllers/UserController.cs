@@ -1,7 +1,5 @@
-﻿using AutoMapper;
-using Envvio.Parking.Data.Dtos;
-using Envvio.Parking.Models;
-using Microsoft.AspNetCore.Identity;
+﻿using Envvio.Parking.Data.Dtos;
+using Envvio.Parking.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Envvio.Parking.Controllers
@@ -10,25 +8,26 @@ namespace Envvio.Parking.Controllers
     [Route("[controller]")]
     public class UserController : ControllerBase
     {
-        private IMapper _mapper;
-        private UserManager<User> _userManager;
+        private UserService _userService;
 
-        public UserController(IMapper mapper, UserManager<User> userManager)
+        public UserController(UserService registerService)
         {
-            _mapper = mapper;
-            _userManager = userManager;
+            _userService = registerService;            
         }
 
-        [HttpPost]
+        [HttpPost("register")]
         public async Task<IActionResult> RegisterUser(CreateUserDto dto)
         {
-            User user = _mapper.Map<User>(dto);
+            await _userService.Register(dto);
+            return Ok("Usuário cadastrado com sucesso.");
+        }
 
-            IdentityResult result = await _userManager.CreateAsync(user, dto.Password);
+        [HttpPost("login")]
+        public async Task<IActionResult> Login(LoginUserDto dto)
+        {
+            await _userService.Login(dto);
+            return Ok("Usuário autenticado.");
 
-            if (result.Succeeded) return Ok("Usuário cadastrado com sucesso.");
-
-            throw new ApplicationException("Falha ao cadastrar usuário.");
         }
     }
 }

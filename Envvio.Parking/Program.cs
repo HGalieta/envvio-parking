@@ -1,5 +1,6 @@
 using Envvio.Parking.Data;
 using Envvio.Parking.Models;
+using Envvio.Parking.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,6 +21,8 @@ builder.Services
     .AddDefaultTokenProviders();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddScoped<UserService>();
 
 var app = builder.Build();
 
