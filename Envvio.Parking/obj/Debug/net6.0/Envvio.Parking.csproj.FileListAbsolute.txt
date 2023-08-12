@@ -105,3 +105,8 @@ C:\Users\hgali\source\repos\Envvio.Parking\Envvio.Parking\obj\Debug\net6.0\refin
 C:\Users\hgali\source\repos\Envvio.Parking\Envvio.Parking\obj\Debug\net6.0\Envvio.Parking.pdb
 C:\Users\hgali\source\repos\Envvio.Parking\Envvio.Parking\obj\Debug\net6.0\Envvio.Parking.genruntimeconfig.cache
 C:\Users\hgali\source\repos\Envvio.Parking\Envvio.Parking\obj\Debug\net6.0\ref\Envvio.Parking.dll
+C:\Users\hgali\source\repos\Envvio.Parking\Envvio.Parking\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\hgali\source\repos\Envvio.Parking\Envvio.Parking\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\hgali\source\repos\Envvio.Parking\Envvio.Parking\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\hgali\source\repos\Envvio.Parking\Envvio.Parking\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\hgali\source\repos\Envvio.Parking\Envvio.Parking\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
