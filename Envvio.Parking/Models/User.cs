@@ -1,6 +1,8 @@
-﻿namespace Envvio.Parking.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace Envvio.Parking.Models
 {
-    public class User
+    public class User : IdentityUser
     {
     }
 }

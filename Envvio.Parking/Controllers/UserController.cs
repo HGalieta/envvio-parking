@@ -10,7 +10,7 @@ namespace Envvio.Parking.Controllers
         [HttpPost]
         public IActionResult RegisterUser(CreateUserDto dto)
         {
-            return View();
+            throw new NotImplementedException();
         }
     }
 }

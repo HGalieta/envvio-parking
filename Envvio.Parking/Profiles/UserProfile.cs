@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Envvio.Parking.Data.Dtos;
+using Envvio.Parking.Models;
 
 namespace Envvio.Parking.Profiles
 {
