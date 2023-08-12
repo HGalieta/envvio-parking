@@ -4,10 +4,10 @@
     {
         public void AlterStatus(Employee employee)
         {
-            if (employee.status == "Active")
-                employee.status = "Disabled";
-            if (employee.status == "Disabled")
-                employee.status = "Active";
+            if (employee.Status == "Active")
+                employee.Status = "Disabled";
+            if (employee.Status == "Disabled")
+                employee.Status = "Active";
 
         }
     }
