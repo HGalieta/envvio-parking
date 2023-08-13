@@ -1,7 +1,29 @@
+using Envvio.Parking.Data;
+using Envvio.Parking.Models;
+using Envvio.Parking.Services;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<UserDbContext>(
+    options =>
+    {
+        options.UseSqlite(builder.Configuration.GetConnectionString("UserConnection"));
+    });
+builder.Services
+    .AddIdentity<User, IdentityRole>()
+    .AddEntityFrameworkStores<UserDbContext>()
+    .AddDefaultTokenProviders();
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<TokenService>();
 
 var app = builder.Build();
 
@@ -19,6 +41,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.MapControllers();
 
 app.MapRazorPages();
 

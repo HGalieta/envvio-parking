@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hgali\\source\\repos\\Envvio.Estacionamento\\Envvio.Parking\\Envvio.Parking\\Envvio.Parking.csproj": {}
+    "C:\\Users\\hgali\\source\\repos\\Envvio.Parking\\Envvio.Parking\\Envvio.Parking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hgali\\source\\repos\\Envvio.Estacionamento\\Envvio.Parking\\Envvio.Parking\\Envvio.Parking.csproj": {
+    "C:\\Users\\hgali\\source\\repos\\Envvio.Parking\\Envvio.Parking\\Envvio.Parking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hgali\\source\\repos\\Envvio.Estacionamento\\Envvio.Parking\\Envvio.Parking\\Envvio.Parking.csproj",
+        "projectUniqueName": "C:\\Users\\hgali\\source\\repos\\Envvio.Parking\\Envvio.Parking\\Envvio.Parking.csproj",
         "projectName": "Envvio.Parking",
-        "projectPath": "C:\\Users\\hgali\\source\\repos\\Envvio.Estacionamento\\Envvio.Parking\\Envvio.Parking\\Envvio.Parking.csproj",
+        "projectPath": "C:\\Users\\hgali\\source\\repos\\Envvio.Parking\\Envvio.Parking\\Envvio.Parking.csproj",
         "packagesPath": "C:\\Users\\hgali\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hgali\\source\\repos\\Envvio.Estacionamento\\Envvio.Parking\\Envvio.Parking\\obj\\",
+        "outputPath": "C:\\Users\\hgali\\source\\repos\\Envvio.Parking\\Envvio.Parking\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -44,6 +44,38 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.27.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
